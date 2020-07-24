@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CovidMon</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+            <a class="navbar-brand" href="#">
+                <img src="https://image.flaticon.com/icons/svg/2904/2904205.svg" width="30" height="30" alt="CovidMon">
+                CovidMon
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active hoverable ">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#tentangModal">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        
+        <div class="jumbotron">
+            <h1 class="display-4 bgDark">CovidMon</h1><br>
+            <p class="lead bgDark">
+                Monitoring Virus Covid-19 | 
+                <a href="#" data-toggle="modal" data-target="#wfhModal" class="fh">Work From Home</a> | 
+                <a href="#" data-toggle="modal" data-target="#sfhModal" class="fh">Study From Home</a>.</p>
+        </div>
+    <!-- Modal Tentang -->
+        <div class="modal fade" id="tentangModal" tabindex="-1" role="dialog" aria-labelledby="tentangModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tentangModalLabel">Tentang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Hai, selamat datang di aplikasi web CovidMon, sebuah aplikasi monitoring covid
+                        yang datanya berasal dari 
+                        <em>Mathdroid API</em>(<a href="https://github.com/mathdroid/covid-19-api">github.com/mathdroid/covid-19-api</a>).
+                    </p>
+                    <p>
+                        Aplikasi ini disusun oleh Muhammad Zuhdi Fikri Johari(Ikkifik).
+                        <ul>
+                            <li>Instagram: Ikkifik</li>
+                            <li>Github: <a href="https://github.com/zuhdifikri">github.com/zuhdifikri</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    <!-- Modal WFH -->
+    <div class="modal fade" id="wfhModal" tabindex="-1" role="dialog" aria-labelledby="wfhModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="wfhModalLabel">#WorkFromHome</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Tetap Sehat Saat Work from Home</strong> 
+                    Berikut ini adalah beberapa kegiatan sederhana yang bisa Anda terapkan selama menjalani WFH agar tubuh tetap sehat:
+                    <ol>
+                        <li>
+                            <strong>Tetap bangun pagi dan sarapan</strong>
+                            <p>Selama WFH, Anda memang dapat bangun lebih siang daripada biasanya. 
+                                Namun, penting untuk membiasakan diri tetap bangun pagi, 
+                                supaya pola tidur Anda tetap teratur dan kesehatan dapat lebih terjaga.</p>
+                        </li>
+                        <li>
+                            <strong>Berjemur di pagi hari</strong>
+                            <p>Selain sarapan, Anda juga disarankan untuk berjemur di pagi hari. Kebiasaan ini tidak hanya dapat meningkatkan kesehatan tulang, tetapi juga mampu membuat suasana hati Anda menjadi lebih baik. Ini tentu akan memberikan pengaruh yang positif terhadap kinerja Anda selama menjalani WFH.</p>
+                        </li>
+                        <li>
+                            <strong>Duduk dengan posisi yang benar</strong>
+                            <p>Saat WFH, posisi bekerja Anda memang lebih bebas, bahkan sambil tengkurap di tempat tidur pun bisa. Namun, sebaiknya Anda tetap bekerja dengan posisi duduk layaknya sedang bekerja di kantor, yaitu dengan kursi dan meja.</p>
+                        </li>
+                        <li>
+                            <strong>Konsumsi makanan sehat</strong>
+                            <p>Agar daya tahan tubuh dan kesehatan tetap terjaga, konsumsilah makanan sehat dengan kandungan gizi yang seimbang, yaitu mengandung protein, karbohidrat, lemak baik, serat, mineral, dan vitamin.</p>
+                        </li>
+                        <li>
+                            <strong>Batasi dan bijak memilih camilan yang dikonsumsi</strong>
+                            <p>Godaan untuk mengonsumsi camilan yang gurih dan manis memang cenderung lebih besar selama menjalani WFH. Namun, sebaiknya Anda tetap membatasi konsumsi camilan, terutama yang tinggi kalori dan gula, agar berat badan Anda tetap terkontrol.</p>
+                        </li>
+                    </ol>
+                    <em>Sumber: Alodokter.com</em>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>    
+
+    <!-- Modal SFH -->
+    <div class="modal fade" id="sfhModal" tabindex="-1" role="dialog" aria-labelledby="sfhModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sfhModalLabel">#StudyFromHome</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong>Tetap Semangat Ketika Study from Home</strong> 
+                    Berikut ini adalah beberapa kegiatan sederhana yang bisa Anda terapkan selama menjalani WFH agar tubuh tetap sehat:
+                    <ol>
+                        <li>
+                            <strong>Atur jadwal belajar</strong>
+                            <p>Belajar dari rumah membuat kita memiliki lebih banyak waktu senggang. Sebagai pelajar, sebaiknya kamu tidak terlena dengan situasi tersebut. Ingatlah bahwa disiplin diri merupakan kunci utama untuk tetap produktif meskipun di rumah aja.</p>
+                        </li>
+                        <li>
+                            <strong>Ciptakan sudut belajar yang kamu banget!</strong>
+                            <p>Keluar dari kamarmu dan eksplor tempat nyaman di sekitaran rumah untuk kamu “sulap” menjadi tempat belajar baru di rumah. Misalnya saja mencoba belajar di teras depan rumah atau dekat area balkon rumah? Pakai saja meja belajar portable dan gelar tikar untuk belajar di situ. Kalau kamu lebih nyaman belajar di kamar, cobalah untuk menciptakan atmosfer belajar yang nyaman. Dekor area meja belajarmu sekreatif mungkin untuk menambah semangat belajar.</p>
+                        </li>
+                        <li>
+                            <strong>Belajar kelompok secara online, why not?</strong>
+                            <p>Kalau biasanya kamu senang belajar kelompok di sekolah, di masa isolasi diri ini kamu tetap bisa melakukannya di rumah aja, walaupun secara online. Bisa dengan video call atau telpon, atau memanfaatkan conference call jika jumlah temanmu lebih dari satu orang. Kamu jadi tetap bisa keep in touch ‘kan dengan teman-teman?</p>
+                        </li>
+                        <li>
+                            <strong>Atasi kantuk dengan makanan ringan</strong>
+                            <p>Supaya kamu tidak cepat mengantuk, mengunyah dan minum air putih cukup sangat disarankan untuk menjaga kamu tetap fokus. Usahakan konsumsi camilan yang bergizi seimbang untuk menjaga stamina tubuh agar tidak mudah terserang virus. Camilan yang bisa kamu konsumsi contohnya buah-buahan, kacang-kacangan, dark chocolate, keju, dan yogurt. Tapi jangan jadi sibuk makan melulu ya!</p>
+                        </li>
+                        <li>
+                            <strong>Pastikan alat tulis dan gadget dalam keadaan bersih</strong>
+                            <p>Virus corona dapat menular lewat cairan tubuh seperti keringat. Sangat mungkin kita bisa tertular dari virus corona yang menempel pada benda-benda seperti alat tulis, mouse, hingga gadget. Apalagi jika kamu sharing dengan orang lain saat menggunakan benda-benda tersebut. Sebaiknya semprotkan desinfektan dulu sebelum kamu gunakan dan selalu cuci tangan setiap selesai menggunakan.</p>
+                        </li>
+                        <em>Sumber: campuspedia.id</em>
+                    </ol>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    </header>
+    <main>
+
+        <h3 class="text-center">Data Global</h3>
+        <div class="row m-3">
+            <div class="col-sm-4">
+                <positive-data class="card"></positive-data>
+            </div>
+            <div class="col-sm-4">
+                <recovered-data class="card"></recovered-data>
+            </div>
+            <div class="col-sm-4">
+                <death-data class="card"></death-data>
+            </div>
+        </div>
+
+
+        <h3 class="text-center">Data Indonesia</h3>
+        <div class="row m-3">
+            <div class="col-sm-4">
+                <positive-data-indo class="card"></positive-data-indo>
+            </div>
+            <div class="col-sm-4">
+                <recovered-data-indo class="card"></recovered-data-indo>
+            </div>
+            <div class="col-sm-4">
+                <death-data-indo class="card"></death-data-indo>
+            </div>
+        </div>
+        
+      
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.jumbotron {
+    background-color: black;
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/17/07/15/coronavirus-4939242_960_720.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.jumbotron::after {
+    content: "";
+    background-color: black;
+    position: relative;
+}
+
+.hoverable:hover {
+    background-color: #0360b1;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.bgDark {
+    background-color: #292b2c;
+    padding: 10px;
+    display: inline-block;
+}
+
+.fh {
+    color:white;
+}
+
+.fh:hover{
+    text-decoration: none ;
+    color: yellow;
+}
